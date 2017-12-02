@@ -16,6 +16,6 @@ class School
   end
 
   def sort
-    @roster.sort.to_h
+    @roster.sort_by(&:first).map { |k, v| [k, v.sort]}.to_h
   end
 end
