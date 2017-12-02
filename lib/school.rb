@@ -14,4 +14,8 @@ class School
   def grade(grades)
     @roster[grades]
   end
+
+  def sort
+    @roster.sort_by {|k, v| k}
+  end
 end
