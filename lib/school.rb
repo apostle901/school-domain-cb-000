@@ -10,4 +10,8 @@ class School
   def add_student(student, grade)
     @roster.has_key?(grade) ? @roster[grade] << student : @roster[grade] = [student]
   end
+
+  def grade(grades)
+    @roster[grades]
+  end
 end
